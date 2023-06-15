@@ -46,7 +46,7 @@ function start_butto_allowed(){
         console.log(id);
     });
 
-    location.reload();
+    //location.reload();
 
 }
 
