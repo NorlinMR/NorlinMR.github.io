@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Press+Start+2P&family=Ubuntu&display=swap');
 
 .body {
     background-color: blueviolet;
 }
-
+p#p{
+    font-size:10em;
+    text-align: center;
+}
 div#Main {
     background-color: blueviolet;
     width: 100%;
@@ -68,6 +71,7 @@ div#p3{
     display: block;
     float: right;
     border-bottom-left-radius: 15px;
+    font-family: 'Ubuntu';
 }
 
 p#ht {
@@ -112,9 +116,9 @@ div#row3 {
 }
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
+    25%  {background-color:yellow; left:-200px; top:0px;}
+    50%  {background-color:blue; left:-200px; top:-200px;}
+    75%  {background-color:green; left:0px; top:-200px;}
     100% {background-color:red; left:0px; top:0px;}
 }
     @keyframes example2 {
@@ -312,3 +316,130 @@ button#b9 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+button.bstart{
+    background-color:white;
+    color: #28282B;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+button.bstart:hover{
+    background-color: #28282B;
+    color:whitesmoke;
+    border:2px solid white;
+}
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position:relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position:absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:#333;
+    visibility: hidden;
+    transition: transform 04s, top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup img{
+    width: 100px;
+    /*margin-top: -50px;*/
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup p{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family:'Press Start 2P';
+}
+
+.popup button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background:crimson;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+/*------------------------------------*/
+.popup1{
+    width: 400px;
+    background: #28282B;
+    border-radius: 6px;
+    position:absolute;
+    top:95%;
+    left:50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color:#fff;
+    visibility: hidden;
+    transition: transform 04s, top 0.4s;
+}
+.open-popup1{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup1 img{
+    width: 100px;
+    /*margin-top: -50px;*/
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup1 p{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    font-family:'Press Start 2P';
+}
+
+.popup1 button{
+    width: 100%;
+    margin-top:50px;
+    padding: 10px 0;
+    background:crimson;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+
+
